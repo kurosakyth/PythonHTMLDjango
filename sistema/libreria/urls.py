@@ -7,6 +7,7 @@ urlpatterns = [
     
     path('libros', views.libros, name='libros'),
     path('libros/crear', views.crear, name='crear'),
+    path('libros/editar', views.editar, name='editar'),
 ]
 #urls trae el html de views, entonces monta primero las views, para tener la dirección en la web.
 #inicio es "" entonces no tiene problema && nosotros es la otra página. Al igual que libros, que es

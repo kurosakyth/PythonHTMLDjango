@@ -12,6 +12,8 @@ def libros(request):
     return render(request, 'libros/index.html')
 def crear(request):
     return render(request, 'libros/crear.html')
+def editar(request):
+    return render(request, 'libros/editar.html')
 
 #en la vista tenemos el request de html para poder enviarlo a urls, como el método de la palabra en azul
 #sea inicio, nosotros, libros, crear, etc
