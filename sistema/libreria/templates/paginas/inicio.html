@@ -1,9 +1,14 @@
+<!-- pide utilizar info de base.html -->
 {% extends "base.html "%}
-
+<!-- cada block... endblock son hipervinculos para usar en el base.html -->
 {% block titulo %} Inicio {% endblock %}
-
+<!-- lo anterior jala el navbar de base.html y el "Inicio" que tiene es el título de la página -->
+<!-- este block contenido siguiente es del body -->
+<!-- el htipervinculo de contenido usa el html por defecto que tiene base.html, para solo enviar este
+contenido, que en este case es un board con la info -->
 {% block contenido %} 
 
+<!-- lo siguiente es de bs5 -->
 <div class="p-5 bg-light">
     <div class="container">
         <h1 class="display-3">Bienvenidos al sitio de la libreria</h1>
@@ -11,7 +16,7 @@
         <hr class="my-2">
         <p>More info</p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Empezar</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Empezar</a>
         </p>
     </div>
 </div>
