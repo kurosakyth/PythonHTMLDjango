@@ -10,7 +10,10 @@
       name="{{ campo.name }}"
       id=""
       aria-describedby="helpId"
-      placeholder="{{ campo.label }}"/>
+      placeholder="{{ campo.label }}"
+      value="{{ campo.value }}" !-- después de este campo.value va un | default: ''  pero da error--
+      
+      />
 
     </div>
     <div class="col-12 help-text">{{ campo.errors }}</div>
